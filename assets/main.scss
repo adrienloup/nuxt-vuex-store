@@ -1,0 +1,267 @@
+@font-face {
+	font-family: 'FTN45__W';
+	src: url('FTN45__W.woff2') format('woff2'),
+		url('FTN45__W.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'FTN75__W';
+	src: url('FTN75__W.woff2') format('woff2'),
+		url('FTN75__W.woff') format('woff');
+}
+
+*, html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+  letter-spacing: 1px;
+  background: #fff;
+	font: 18px/1.2 'FTN45__W', sans-serif;
+	font-weight: normal;
+	color: #2d2d2d;
+}
+
+a {
+	text-decoration: none;
+}
+
+#main {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: stretch;
+  flex-wrap: wrap;
+	position: relative;
+  z-index: 1;
+}
+
+#article {
+  width: 100%;
+	position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 20px;
+
+  .inside {
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 40px 60px 40px 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+
+		h1 {
+			font-size: 40px;
+		}
+	
+		p {
+			font-size: 20px;
+			margin-top: 10px;
+		}
+	
+		button {
+			display: inline-block;
+			margin-top: 40px;
+			background-color: #00aa5b;
+			padding: 20px 30px;
+			text-transform: uppercase;
+			font-family: 'FTN75__W';
+			font-size: 18px;
+			border: 0;
+			text-transform: uppercase;
+			font-family: 'FTN75__W';
+			color: #fff;
+			cursor: pointer;
+		}
+	
+		.item {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: flex-start;
+			margin-top: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		.img {
+			width: 60px;
+		}
+		
+		.text {
+			margin-left: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+	
+			span:last-child {
+				margin-top: 10px;
+			}
+		}  
+	
+		.total {
+			margin-top: 10px;
+		}
+	}
+	
+  .product {
+    width: calc((100%/4) - 20px);
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+  }
+
+  .caption {
+    margin-top: 5px;
+  }
+
+  .brand, .title {
+    pointer-events: none;
+  }
+
+  .img {
+    display: block;
+    position: relative;
+    background-color: #eee;
+  }
+
+  .img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .sale .sale{
+    display: block;
+    font-family: 'FTN75__W';
+    pointer-events: none;
+    color: #d01345;
+  }
+
+  .price {
+    display: block;
+    margin-top: 5px;
+    font-family: 'FTN75__W';
+    pointer-events: none;
+  }
+
+  svg {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  
+    circle {
+      fill: #fff;
+      pointer-events: none;
+    }
+  
+    path {
+      fill: #2d2d2d;
+      pointer-events: none;
+    }
+  
+    &:hover circle {
+      fill: #2d2d2d;
+    }
+  
+    &:hover path {
+      fill: #fff;
+    }
+  }
+}
+
+#cart {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 30px;
+	cursor: pointer;
+
+	svg {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		z-index: 1;
+	}
+
+	circle {
+		fill: none;
+	}
+
+	path {
+		fill: #2d2d2d;
+	}
+
+	span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		margin-top: 2px;
+		transform: translate(-50%,-50%);
+		line-height: 10px;
+		font-size: 10px;
+		color: #2d2d2d;
+		font-family: 'FTN75__W', sans-serif;
+	}
+
+	&.nuxt-link-exact-active {
+		background-color: #2d2d2d;
+	}
+
+	&.active {
+
+		circle {
+			fill: #d01345;
+		}
+	}
+
+	&.nuxt-link-exact-active, &.active {
+		path {
+			fill: #fff;
+		}
+		
+		span{
+			color: #fff;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+
+	#article .product {
+		width: calc((100% / 3) - 20px);
+	}
+}
+
+@media screen and (max-width: 769px) {
+
+	#article .product {
+		width: calc((100% / 2) - 20px);
+	}
+}
