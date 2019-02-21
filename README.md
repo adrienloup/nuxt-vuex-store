@@ -1,5 +1,5 @@
 ### Nuxt Vuex Store
-Store samples using Vuex and Nuxt. For detailed explanation on how things work, consult the docs for [Nuxt](https://fr.nuxtjs.org/).
+Sample of store with Vuex and Nuxt for pleasure. For a detailed explanation of how to work, see the [Nuxt](https://fr.nuxtjs.org/) documentation.
 
 In progress...
 
@@ -13,17 +13,17 @@ npm start
 ```
 
 ### Motivation
-* Design a store
-* Add and remove items from the shoppingcart
-* Sort by genre, price range, collection, by product type, sales, color and size
-* E-commerce buying tunnel
+* Design a store to select different items
+* Add and remove items from the cart
+* filters: sort by clothing, price range, collection, product type, sales, color and size
+* E-commerce shopping tunnel
 * Single product page
 * Local storage
 * Modern animations
-* Progress bar between the routes
+* Progress bar between routes
 * Infinite scroll
-* Unit Tests
-* Build for production
+* Unit tests
+* Built for production
 * and others
 
 ### Inspiration
