@@ -8,7 +8,7 @@ In progress...
 # install dependencies
 npm i -D
 
-# dev serve at http://localhost:3000
+# dev server at http://localhost:3000
 npm start
 ```
 
