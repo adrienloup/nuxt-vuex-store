@@ -2,9 +2,5 @@
 .DS_Store
 logs
 *.log
-npm-debug.log*
-node_modules
-.npm
-.eslintcache
-.nuxt
-.cache
+.nuxt/
+node_modules/
