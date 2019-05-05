@@ -1,8 +1,3 @@
-### Nuxt Vuex Store
-Sample of store with Vuex and Nuxt for pleasure. For a detailed explanation of how to work, see the [Nuxt](https://fr.nuxtjs.org/) documentation.
-
-In progress...
-
 ### Build Setup
 ```shell
 # install dependencies
