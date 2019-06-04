@@ -4,3 +4,4 @@ logs
 *.log
 .nuxt/
 node_modules/
+.idea/
