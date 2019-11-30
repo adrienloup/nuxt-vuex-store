@@ -23,6 +23,3 @@ npm start
 
 ### Inspiration
 **Store Vuex** - [Nuxt](https://fr.nuxtjs.org/examples/vuex-store/)
-
-### License
-[ISC](https://github.com/adrienloup/nuxt-vuex-store/blob/master/LICENSE.md)
